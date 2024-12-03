@@ -1,0 +1,28 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90vh;
+  background-color: #f4f8fc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  background-color: #f4f8fc;
+  overflow: hidden; /* Prevent overflow in the main content */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%; /* Ensure it fills available space */
+}

@@ -1,0 +1,107 @@
+/* Large Screens (>1024px) - Horizontal Layout */
+.application-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.application-field {
+  display: flex;
+  flex-direction: column; /* Stack heading and value */
+  align-items: center;
+  text-align: center;
+}
+
+.application-field-heading {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+.application-field-value {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hover Effect */
+.application-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+/* Action Button */
+.application-view-button {
+  padding: 4px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.application-view-button:hover {
+  background-color: #0056b3;
+}
+
+.application-view-button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
+
+/* Medium Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .application-card {
+    display: flex;
+    flex-direction: column; /* Stack fields */
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .application-field {
+    flex-direction: row; /* Heading and value side-by-side */
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .application-field-heading {
+    flex: 1;
+    text-align: left;
+  }
+
+  .application-field-value {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+/* Small Screens (<768px) */
+@media (max-width: 768px) {
+  .application-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .application-field {
+    flex-direction: column; /* Stack heading and value */
+    text-align: left;
+  }
+
+  .application-field-heading {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .application-view-button {
+    width: 100%; /* Full-width button */
+    margin-top: 10px; /* Add spacing for alignment */
+  }
+}

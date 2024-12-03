@@ -1,0 +1,38 @@
+/* Offer List Container */
+.offer-list-container {
+  width: 95%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-bottom: 35px;
+}
+
+.offer-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.offer-list-container::-webkit-scrollbar-track {
+  background: #f4f8fc;
+  border-radius: 4px;
+}
+
+.offer-list-container::-webkit-scrollbar-thumb {
+  background: #1565d8;
+  border-radius: 4px;
+  border: 2px solid #f4f8fc;
+}
+
+.offer-list-container::-webkit-scrollbar-thumb:hover {
+  background: #104bb5;
+}
+
+@media (max-width: 768px) {
+  .offer-list-container {
+    margin: 20px 43px auto; /* Center horizontally */
+    width: 90%;
+    margin-bottom: 35px;
+  }
+}

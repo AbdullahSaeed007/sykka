@@ -1,0 +1,145 @@
+/* Add Product Form Styles */
+.add-product-form {
+  width: 95%;
+  max-height: 100%;
+  margin-top: 41px;
+  margin-left: 0px;
+  background: #ffffff;
+  border-radius: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  overflow-y: auto;
+}
+.add-product-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+.add-product-form::-webkit-scrollbar-track {
+  background: #f4f8fc;
+  border-radius: 4px;
+}
+
+.add-product-form::-webkit-scrollbar-thumb {
+  background: #1565d8;
+  border-radius: 4px;
+  border: 2px solid #f4f8fc;
+}
+
+.add-product-form::-webkit-scrollbar-thumb:hover {
+  background: #104bb5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .status {
+  background-color: #3565d9;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  padding: 10px;
+  font-family: Arial;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.image-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-upload input[type="file"] {
+  display: none;
+}
+
+.image-upload label {
+  padding: 10px 20px;
+  background-color: #1565d8;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #3565d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #104bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .add-product-form {
+    margin: 20px 55px auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-product-form {
+    margin: 20px 43px auto;
+    width: 90%;
+    margin-bottom: 35px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .status {
+    align-self: flex-start;
+  }
+}

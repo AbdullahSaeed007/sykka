@@ -1,0 +1,221 @@
+/* ProductDetail.css */
+
+/* Container for the entire product detail page */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90vh;
+  background-color: #f4f8fc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  background-color: #f4f8fc;
+  overflow: hidden; /* Prevent overflow in the main content */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%; /* Ensure it fills available space */
+}
+
+/* Product detail content */
+
+.product-detail {
+  width: 95%;
+  display: flex;
+  flex: 1;
+  max-height: 100%;
+  margin-top: 41px;
+  margin-left: 0px;
+  border-radius: 15px 0 0 0;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  gap: 1rem;
+  overflow-y: auto;
+  margin-bottom: 35px;
+}
+
+/* Left section: Input options */
+.input-options {
+  width: 20%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 100%;
+  margin-bottom: 0%;
+}
+
+.input-options h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.draggable-input {
+  background-color: #f8f9fa;
+  border: 1px solid #dcdcdc;
+  padding: 0.8rem 0.8rem;
+  margin-bottom: 0.5rem;
+  cursor: grab;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.draggable-input:hover {
+  background-color: #e9ecef;
+}
+
+/* Right section: Form builder */
+.form-builder {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 100%;
+  margin-bottom: 40px;
+}
+
+.form-builder h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  position: relative;
+  background-color: #f8f9fa;
+  border: 1px solid #dcdcdc;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.form-field label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field select {
+  margin-top: 0.3rem;
+  padding: 0.4rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.form-field button {
+  margin-top: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.form-field button:hover {
+  background-color: #c9302c;
+}
+
+.status-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-section p {
+  font-size: 0.9rem;
+}
+/* Delete button positioned at the top-right corner */
+.delete-button {
+  position: absolute; /* Absolute positioning relative to the .form-field */
+  bottom: 163px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Remove default padding */
+}
+
+/* Icon inside the delete button */
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover .delete-icon {
+  transform: scale(1.2); /* Slight zoom-in effect on hover */
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin: 20px 43px auto;
+    width: 90%;
+    margin-bottom: 35px;
+  }
+
+  .draggable-input {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.3rem;
+  }
+  .form-field label {
+    font-size: 0.8rem; /* Reduce label font size */
+  }
+  .form-field input,
+  .form-field select {
+    font-size: 0.8rem; /* Adjust input font size */
+    padding: 0.3rem; /* Reduce padding for compact appearance */
+  }
+  .form-field button {
+    font-size: 0.8rem; /* Adjust button size */
+    padding: 0.3rem 0.6rem;
+  }
+  .submit-button {
+    width: 100%; /* Ensure the submit button spans full width */
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Add scroll behavior to both left and right panels */
+.input-options,
+.form-builder {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3565d9 #f4f4f4;
+  margin-bottom: 0%;
+}
+
+.input-options::-webkit-scrollbar,
+.form-builder::-webkit-scrollbar {
+  width: 8px;
+}
+
+.input-options::-webkit-scrollbar-thumb,
+.form-builder::-webkit-scrollbar-thumb {
+  background-color: #3565d9;
+  border-radius: 4px;
+}

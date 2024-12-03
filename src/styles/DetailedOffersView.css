@@ -1,0 +1,86 @@
+/* DetailedOffersView.css */
+.detailed-offer-view-container {
+  width: 90%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px 35px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.bank-details {
+  margin-bottom: 30px;
+}
+
+.bank-details h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.loan-details-section {
+  margin-top: 40px;
+}
+
+.loan-details-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loan-details-title {
+  font-size: 18px;
+}
+
+.loan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loan-detail-item {
+  font-size: 16px;
+  color: #555;
+}
+
+.loan-detail-item strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .detailed-offer-view-container {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .detail-item,
+  .loan-detail-item {
+    font-size: 14px;
+  }
+
+  .loan-details-header {
+    font-size: 16px;
+  }
+}

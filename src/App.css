@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background-color: #f4f8fc;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw;
+  height: 100vh;  */
+  overflow: hidden;
+  background-color: #f4f8fc;
+  width: 108%;
+  margin-left: -40px;
+}
